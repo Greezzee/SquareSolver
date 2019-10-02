@@ -1,0 +1,112 @@
+\hypertarget{_source_8cpp}{}\doxysection{C\+:/\+Users/zorin/source/repos/\+Square\+Solver/\+Square\+Solver/\+Square\+Solver/\+Source.cpp File Reference}
+\label{_source_8cpp}\index{C:/Users/zorin/source/repos/SquareSolver/SquareSolver/SquareSolver/Source.cpp@{C:/Users/zorin/source/repos/SquareSolver/SquareSolver/SquareSolver/Source.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_source_8cpp_af08ec37a8c99d747fb60fa15bc28678b}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+W\+A\+R\+N\+I\+N\+GS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_source_8cpp_ac1ba2f9d576c716484869414f91b7151}{Solve\+Linear}} (double a, double b, double $\ast$x)
+\item 
+int \mbox{\hyperlink{_source_8cpp_ab2dd9b24e0e487efdd1cd1f40dd3a023}{Solve\+Square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\item 
+void \mbox{\hyperlink{_source_8cpp_ab689304f02cbd816368f794a046c7894}{Print\+Roots}} (int number\+Of\+Roots, double x1, double x2)
+\item 
+int \mbox{\hyperlink{_source_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_source_8cpp_a35edd79502e9fd1c58eb07a2ad3f4d0a}{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_source_8cpp_af08ec37a8c99d747fb60fa15bc28678b}\label{_source_8cpp_af08ec37a8c99d747fb60fa15bc28678b}} 
+\index{Source.cpp@{Source.cpp}!\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}}
+\index{\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}!Source.cpp@{Source.cpp}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_WARNINGS}{\_CRT\_SECURE\_NO\_WARNINGS}}
+{\footnotesize\ttfamily \#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+W\+A\+R\+N\+I\+N\+GS}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_source_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_source_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Source.cpp@{Source.cpp}!main@{main}}
+\index{main@{main}!Source.cpp@{Source.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_source_8cpp_ab689304f02cbd816368f794a046c7894}\label{_source_8cpp_ab689304f02cbd816368f794a046c7894}} 
+\index{Source.cpp@{Source.cpp}!PrintRoots@{PrintRoots}}
+\index{PrintRoots@{PrintRoots}!Source.cpp@{Source.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintRoots()}{PrintRoots()}}
+{\footnotesize\ttfamily void Print\+Roots (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Roots,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
+
+\DoxyHorRuler
+ Print information about equation solution to console
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em number\+Of\+Roots} & roots count (S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS if infinity) \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1,x2} & roots of equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number, sign of which show, whitch string is \char`\"{}bigger\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_source_8cpp_ac1ba2f9d576c716484869414f91b7151}\label{_source_8cpp_ac1ba2f9d576c716484869414f91b7151}} 
+\index{Source.cpp@{Source.cpp}!SolveLinear@{SolveLinear}}
+\index{SolveLinear@{SolveLinear}!Source.cpp@{Source.cpp}}
+\doxysubsubsection{\texorpdfstring{SolveLinear()}{SolveLinear()}}
+{\footnotesize\ttfamily int Solve\+Linear (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+\DoxyHorRuler
+ Solve linear equation of type ax + b = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b} & coefficients of equation\\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & root of equation (don\textquotesingle{}t change if number of roots not 1)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots (S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS if infinity) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_source_8cpp_ab2dd9b24e0e487efdd1cd1f40dd3a023}\label{_source_8cpp_ab2dd9b24e0e487efdd1cd1f40dd3a023}} 
+\index{Source.cpp@{Source.cpp}!SolveSquare@{SolveSquare}}
+\index{SolveSquare@{SolveSquare}!Source.cpp@{Source.cpp}}
+\doxysubsubsection{\texorpdfstring{SolveSquare()}{SolveSquare()}}
+{\footnotesize\ttfamily int Solve\+Square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+\DoxyHorRuler
+ Solve square equation of type ax$^\wedge$2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & coefficients of equation\\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & first root of equation (don\textquotesingle{}t change if number of roots not 1 or 2) \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & second root of equation (don\textquotesingle{}t change if number of roots not 2)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots (S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS if infinity) 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_source_8cpp_a35edd79502e9fd1c58eb07a2ad3f4d0a}\label{_source_8cpp_a35edd79502e9fd1c58eb07a2ad3f4d0a}} 
+\index{Source.cpp@{Source.cpp}!SS\_INF\_ROOTS@{SS\_INF\_ROOTS}}
+\index{SS\_INF\_ROOTS@{SS\_INF\_ROOTS}!Source.cpp@{Source.cpp}}
+\doxysubsubsection{\texorpdfstring{SS\_INF\_ROOTS}{SS\_INF\_ROOTS}}
+{\footnotesize\ttfamily const int S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS = -\/1}
+

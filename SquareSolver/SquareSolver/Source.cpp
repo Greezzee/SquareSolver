@@ -114,7 +114,7 @@ void PrintRoots(int numberOfRoots, double x1, double x2)
 		break;
 
 	default:
-		printf("Error");
+		printf("Print Error");
 		break;
 	}
 }
